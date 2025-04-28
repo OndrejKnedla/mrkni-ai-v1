@@ -1,0 +1,43 @@
+# Development files
+.git
+.github
+.vscode
+.idea
+*.log
+*.md
+LICENSE
+README.md
+
+# Large media files that can be served from a CDN in the future
+# These are excluded to avoid Vercel's file size limit
+# Removed lines excluding specific public folders needed for welcome gallery
+# Use wildcard to ensure all contents are ignored
+public/images/images-ai/**
+public/videos/videos-ai/**
+# public/coming-soon and its contents (images/videos) are now INCLUDED
+
+# Build artifacts
+.next
+node_modules
+out
+dist
+build
+coverage
+
+# Local environment files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Temporary files
+.DS_Store
+Thumbs.db
+
+# SQL and other large files
+*.sql
+*.zip
+*.gz
+*.tar
+*.rar
+*.7z

@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom animations */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+}
+
+@layer base {
+  :root {
+    --background: 150 30% 98%;
+    --foreground: 150 10% 10%;
+    --card: 150 30% 98%;
+    --card-foreground: 150 10% 10%;
+    --popover: 150 30% 98%;
+    --popover-foreground: 150 10% 10%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 150 10% 98%;
+    --secondary: 150 10% 90%;
+    --secondary-foreground: 150 10% 10%;
+    --muted: 150 10% 90%;
+    --muted-foreground: 150 10% 40%;
+    --accent: 150 40% 90%;
+    --accent-foreground: 150 10% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 150 20% 85%;
+    --input: 150 20% 85%;
+    --ring: 142 76% 36%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 150 30% 5%;
+    --foreground: 150 10% 98%;
+    --card: 150 30% 8%;
+    --card-foreground: 150 10% 98%;
+    --popover: 150 30% 5%;
+    --popover-foreground: 150 10% 98%;
+    --primary: 142 76% 36%;
+    --primary-foreground: 150 10% 98%;
+    --secondary: 150 20% 15%;
+    --secondary-foreground: 150 10% 98%;
+    --muted: 150 20% 15%;
+    --muted-foreground: 150 10% 70%;
+    --accent: 150 20% 15%;
+    --accent-foreground: 150 10% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 150 10% 98%;
+    --border: 150 20% 20%;
+    --input: 150 20% 20%;
+    --ring: 142 76% 36%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Add styles for cards on the interactive background */
+.glass-card {
+  @apply bg-white/10 backdrop-blur-md border-white/20 shadow-xl;
+}
+
+/* Make sure text is visible on the interactive background */
+.text-on-bg {
+  @apply text-white drop-shadow-md;
+}
+
+/* Ensure the canvas background can receive mouse events */
+canvas.fixed {
+  pointer-events: auto !important;
+}
+
+/* Floating animation variations */
+.floating-image:nth-child(1) {
+  @apply animate-float-slow;
+}
+.floating-image:nth-child(2) {
+  @apply animate-float-medium;
+}
+.floating-image:nth-child(3) {
+  @apply animate-float-fast;
+}
+.floating-image:nth-child(4) {
+  @apply animate-float-slow animate-float-h-medium;
+}
+.floating-image:nth-child(5) {
+  @apply animate-float-medium animate-float-h-slow;
+}
+.floating-image:nth-child(6) {
+  @apply animate-float-fast animate-float-h-fast;
+}
+.floating-image:nth-child(7) {
+  @apply animate-float-slow animate-float-h-fast;
+}
+.floating-image:nth-child(8) {
+  @apply animate-float-medium animate-float-h-medium;
+}
+
+/* Hide scrollbars but allow scrolling */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}

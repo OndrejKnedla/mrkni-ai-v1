@@ -1,0 +1,10 @@
+# Allow all user agents to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow crawling of specific paths if needed (e.g., admin areas, API routes)
+# Disallow: /admin/
+# Disallow: /api/
+
+# Point crawlers to the sitemap
+Sitemap: https://mrkniai.com/sitemap.xml

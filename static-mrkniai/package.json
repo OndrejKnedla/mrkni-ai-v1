@@ -1,0 +1,8 @@
+{
+  "name": "mrkniai-static",
+  "version": "1.0.0",
+  "description": "MrkniAI Coming Soon Page",
+  "scripts": {
+    "build": "echo 'Static site, no build required'"
+  }
+}

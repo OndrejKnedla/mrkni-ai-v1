@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient background -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1E293B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0F172A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#grad1)"/>
+
+  <!-- MrkniAI Logo/Branding -->
+  <text x="200" y="50" font-family="Arial" font-size="24" font-weight="bold" fill="#EF4444" text-anchor="middle">MrkniAI</text>
+
+  <!-- Video icon -->
+  <g transform="translate(150, 100)">
+    <!-- Video camera body -->
+    <rect x="0" y="0" width="100" height="70" rx="10" fill="#4B5563" />
+
+    <!-- Camera lens -->
+    <circle cx="50" cy="35" r="20" fill="#1F2937" stroke="#9CA3AF" stroke-width="2" />
+    <circle cx="50" cy="35" r="10" fill="#111827" />
+
+    <!-- Record light -->
+    <circle cx="85" cy="15" r="5" fill="#EF4444" />
+
+    <!-- Camera side -->
+    <path d="M100 20L120 10V60L100 50V20Z" fill="#374151" />
+  </g>
+
+  <!-- Text -->
+  <text x="200" y="220" font-family="Arial" font-size="18" fill="white" text-anchor="middle">Video content will appear here</text>
+  <text x="200" y="245" font-family="Arial" font-size="14" fill="#9CA3AF" text-anchor="middle">Click to reload</text>
+
+  <!-- Decorative elements -->
+  <circle cx="50" cy="50" r="20" fill="none" stroke="#4B5563" stroke-width="2" />
+  <circle cx="350" cy="250" r="20" fill="none" stroke="#4B5563" stroke-width="2" />
+</svg>
